@@ -20,8 +20,8 @@
       }
 
       #flipbook {
-        height: 100vh;
-        margin: 0px auto;
+        height: 90vh;
+        margin: 40px auto;
         visibility: hidden;
         box-shadow: 0 0 20px rgba(0,0,0,0.2);
         overflow: hidden;
@@ -86,7 +86,7 @@
         console.log("📄 PDF geladen");
         const totalPages = pdf.numPages;
 
-        const canvasHeight = window.innerHeight ;
+        const canvasHeight = window.innerHeight * 0.9;
         const canvasWidth = canvasHeight * (9 / 16); // 768:1344 verhouding
         const flipbookWidth = canvasWidth * 2;
 
